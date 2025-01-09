@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-background">
+        <header class="dashboard-header">
+            <h1>AUTO CUTTING</h1>
+            <div class="user-info">
+                <span id="userName"></span> | 
+                <span id="currentTime"></span> <!-- Menampilkan waktu real-time -->
+            </div>
+        </header>
+        <main class="dashboard-content">
+            <div class="input-container">
+                <div class="form-group">
+                    <label for="assy">Assy:</label>
+                    <input type="text" id="assy" name="assy" placeholder="Assy" required>
+                </div>
+                <div class="form-group">
+                    <label for="noCCT">No CCT:</label>
+                    <input type="text" id="noCCT" name="noCCT" placeholder="No CCT" required>
+                </div>
+                <div class="form-group">
+                    <label for="qty">Qty:</label>
+                    <input type="number" id="qty" name="qty" placeholder="Qty" required min="1">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="startProcess">Start Proses</button>
+                <button id="settingMachine">Setting Mesin</button>
+                <button id="problemMachine">Problem Mesin</button>
+                <button id="materialHabis">Material Habis</button>
+                <button id="stopProcess">Stop Proses</button>
+                <button id="exit">Exit</button>
+            </div>
+
+            <!-- Tabel untuk menampilkan data -->
+            <h2>Data Proses</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Assy</th>
+                        <th>No CCT</th>
+                        <th>Qty</th>
+                        <th>Aksi</th>
+                        <th>Waktu</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <!-- Tabel untuk total waktu -->
+            <h2>Total Waktu</h2>
+            <table id="totalTimeTable">
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Total Waktu</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </main>
+    </div>
+
+    <!-- Menambahkan script.js di akhir body -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
+

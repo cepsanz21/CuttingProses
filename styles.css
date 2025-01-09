@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Mengisi seluruh tinggi viewport */
+  background-image: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.login-container {
+  width: 400px;
+  padding: 30px;
+  background-color: rgb(29, 101, 245);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: calc(100% - 20px); /* Lebar input lebih pendek */
+  padding: 12px; /* Padding dalam input */
+  margin-top: 5px;
+  border-radius: 20px; /* Membuat bentuk semi-oval */
+  border: none; /* Menghilangkan border default */
+  background-color: rgba(255,255,255,0.8); /* Warna latar belakang semi-transparan */
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+}
+
+button {
+    width: auto; /* Mengubah lebar menjadi otomatis */
+    padding: 10px 20px; /* Padding tombol lebih kecil */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+    font-size: 14px; /* Ukuran font lebih kecil untuk tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek transisi pada tombol */
+    margin-top: 15px; /* Jarak atas untuk tombol */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Efek mengecil saat tombol ditekan */
+}
+
+/* Menambahkan jarak antara kolom password dan tombol login */
+input[type=password] {
+    margin-bottom: 15px; /* Jarak bawah untuk kolom password */
+}
+
+/* Memusatkan tombol di dalam kontainer */
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%; /* Responsif untuk layar kecil */
+        padding: 20px;
+        box-shadow: none; /* Menghilangkan bayangan di layar kecil */
+        margin-top: 20px; /* Margin atas untuk layar kecil */
+        margin-bottom: 20px; /* Margin bawah untuk layar kecil */
+        border-radius: 0; /* Menghilangkan border-radius di layar kecil */
+    }
+}
+
+
+/* ----------------------------------------------- dashboard --------------------------------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-background {
+  background-image: linear-gradient(to right, #00c6ff, #007bff);
+  min-height: 100vh; /* Mengisi seluruh tinggi viewport */
+  color: white; /* Warna teks putih untuk kontras */
+}
+
+.dashboard-header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 36px; /* Ukuran font lebih besar untuk judul */
+}
+
+.user-info {
+  display: flex;
+  justify-content: center; /* Memusatkan informasi pengguna */
+  margin-top: 10px; /* Jarak atas untuk informasi pengguna */
+}
+
+.user-info span {
+  margin: 0 10px; /* Jarak antara elemen informasi pengguna */
+}
+
+.dashboard-content {
+  padding: 20px;
+  max-width: 800px; /* Lebar maksimum konten */
+  margin: auto; /* Memusatkan konten */
+}
+
+.input-container {
+  margin-bottom: 20px; /* Jarak bawah dari kolom input */
+}
+
+.form-group {
+  margin-bottom: 10px; /* Jarak antar kolom input */
+}
+
+label {
+  display: block;
+}
+
+input[type=text], input[type=number] {
+  width: calc(100% - 20px); /* Lebar input lebih pendek */
+  padding: 10px; /* Padding dalam input lebih kecil */
+  border-radius: 20px; /* Membuat bentuk semi-oval */
+  border: none; /* Menghilangkan border default */
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang semi-transparan */
+}
+
+.button-container {
+  margin-top: -10px; /* Mengatur jarak tombol agar lebih dekat dengan input */
+}
+
+button {
+  padding: 10px 15px; /* Padding tombol */
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Sudut melengkung */
+  cursor: pointer; /* Pointer saat hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+table {
+  width: 100%; /* Lebar tabel penuh */
+  border-collapse: collapse; /* Menghilangkan jarak antar border sel tabel */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Border sel tabel */
+  padding: 8px; /* Padding sel tabel */
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.3); /* Latar belakang header tabel semi-transparan */
+}
+
+@media (max-width: 480px) {
+ .dashboard-header h1 {
+      font-size: 24px; /* Ukuran font lebih kecil di layar kecil */
+ }
+
+ .dashboard-content h2 {
+      font-size: 24px; /* Ukuran font lebih kecil untuk subjudul di layar kecil */
+ }
+
+ .form-group {
+      margin-bottom: 5px; /* Jarak antar kolom input lebih kecil di layar kecil */
+ }
+}
